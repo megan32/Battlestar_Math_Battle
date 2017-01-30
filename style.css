@@ -127,14 +127,15 @@ font-family: 'Audiowide', cursive;
 }
 
 #timer{
-  width: 160px;
+  width: 100px;
   height:27px;
   padding-top: 5px;
   padding-left: 10px;
+  padding-right: 10px;
   margin-top: 340px;
   background: #E6DCDB;
-  left: 250px;
-  text-align: left;
+  left: 300px;
+  text-align: center;
   font-size: 15px;
   border-radius: 5px;
   display: none;
@@ -156,9 +157,8 @@ position: absolute;
 
 #gameOver{
   width: 450px;
-  height:230px;
+  height:280px;
   padding-left: 10px;
-  margin-top: 20px;
   left: 10px;
   top: 30px;
   background: #D2D7D3;
@@ -175,7 +175,7 @@ position: absolute;
 
 #startGame{
   width: 450px;
-  height:230px;
+  height:280px;
   padding-top: 3px;
   padding-left: 10px;
   left: 10px;
@@ -186,16 +186,10 @@ position: absolute;
   border-radius: 5px;
   position: absolute;
   border: 10px solid white;
-  
+  z-index: 10;
   display: none;
 }
 
-#startGame:hover{
-  cursor: pointer;
-  box-shadow: 0 0 20px 20px #0074a9;
-  -moz-box-shadow:0 0 20px 20px #0074a9 ;
-  -webkit-box-shadow: 0 0 20px 20px #0074a9;
-}
 
 #quoteBox{
   width: 500px;
