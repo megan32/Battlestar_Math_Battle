@@ -111,8 +111,6 @@ font-family: 'Audiowide', cursive;
   -ms-transition: all 0.2s;
   }
 
-
-
 #box1{
   margin-left: 14px;
 }
@@ -197,5 +195,14 @@ position: absolute;
   box-shadow: 0 0 20px 20px #0074a9;
   -moz-box-shadow:0 0 20px 20px #0074a9 ;
   -webkit-box-shadow: 0 0 20px 20px #0074a9;
+}
 
+#quoteBox{
+  width: 500px;
+  height: 150px;
+  margin: -130px auto 30px auto;
+  text-align: center;
+  position: relative;
+  font-size: 20px;
+  color: black;
 }
