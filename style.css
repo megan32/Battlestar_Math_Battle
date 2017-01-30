@@ -1,1 +1,196 @@
+html{
+height: 100vh;
+background-image: radial-gradient(circle, white, #60646D);
+font-family: 'Audiowide', cursive;
+}
 
+
+#instructionBox{
+  width: 400px;
+  height:55px;
+  margin: 50px auto 10px auto;
+  background: #D2D7D3;
+  text-align: center;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 4px 4px 0px #282830;
+}
+#instructions{
+  font-size: 20px;
+}
+
+#bigBox{
+  width: 500px;
+  height: 400px;
+  background: #282830;
+  margin: 50px auto 150px auto;
+  border-radius: 30px;
+  box-shadow: 4px 4px 0px white;
+  position: relative;
+}
+#correct{
+  width: 75px;
+  height:27px;
+  padding-top: 4px;
+  margin-top: 170px;
+  background: #E6DCDB;
+  left: 40px;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 5px;
+  display:none;
+}
+#wrong{
+  left: 120px;
+  width: 75px;
+  height:27px;
+  padding-top: 4px;
+  margin-top: 170px;
+  background: #E6DCDB;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 5px;
+  display:none;
+}
+
+#score{
+  width: 120px;
+  height:30px;
+  padding-top: 3px;
+  padding-left: 10px;
+  margin-top: 170px;
+  background: #E6DCDB;
+  left: 320px;
+  text-align: left;
+  font-size: 20px;
+  border-radius: 5px;
+  position: absolute;
+}
+#equation{
+  width: 400px;
+  height:130px;
+  padding-top: 3px;
+  padding-left: 10px;
+  margin-top: 20px;
+  left: 40px;
+  background: #D2D7D3;
+  text-align: center;
+  font-size: 50px;
+  border-radius: 5px;
+  position: absolute;
+}
+
+#choices{
+  width: 430px;
+  height:100px;
+  margin: 220px auto 5px 25px;
+  position: absolute;
+}
+
+.boxes{
+  width: 85px;
+  height: 85px;
+  background-color: #D2D7D3;
+  float: left;
+  margin-right: 22px;
+  border-radius: 3px;
+  box-shadow: 0px 4px rgba(227, 0, 14, 0.8 );
+  -moz-box-shadow: 0px 4px rgba(227, 0, 14, 0.8 );
+  -webkit-box-shadow: 0px 4px rgba(227, 0, 14, 0.8);
+  text-align: center;
+  line-height: 80px;
+  font-family: sans-serif;
+  font-size: 15px;
+  position: relative;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  }
+
+
+
+#box1{
+  margin-left: 14px;
+}
+#box4{
+  margin-right: 0;
+}
+.boxes:hover{
+  top:4px;
+  background-color: #0074a9;
+  outline: none;
+  box-shadow: none;
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+}
+
+#timer{
+  width: 160px;
+  height:27px;
+  padding-top: 5px;
+  padding-left: 10px;
+  margin-top: 340px;
+  background: #E6DCDB;
+  left: 250px;
+  text-align: left;
+  font-size: 15px;
+  border-radius: 5px;
+  display: none;
+  position: absolute;
+}
+#launch{
+width: 100px;
+height:27px;
+padding-top: 4px;
+margin-top: 340px;
+background: #E6DCDB;
+left: 95px;
+text-align: center;
+font-size: 15px;
+border-radius: 5px;
+position: absolute;
+}
+
+#gameOver{
+  width: 450px;
+  height:230px;
+  padding-left: 10px;
+  left: 10px;
+  background: #D2D7D3;
+  text-align: center;
+  font-size: 40px;
+  border-radius: 5px;
+  position: absolute;
+  border: 10px solid white;
+  font-size: 25px;
+  z-index: 10;
+  display:none;
+}
+
+
+#startGame{
+  width: 450px;
+  height:230px;
+  padding-top: 3px;
+  padding-left: 10px;
+  left: 10px;
+  margin-top: 20px;
+  background: #D2D7D3;
+  text-align: center;
+  font-size: 25px;
+  border-radius: 5px;
+  position: absolute;
+  border: 10px solid white;
+  z-index: 10;
+  display: none;
+}
+
+#startGame:hover{
+  cursor: pointer;
+  box-shadow: 0 0 20px 20px #0074a9;
+  -moz-box-shadow:0 0 20px 20px #0074a9 ;
+  -webkit-box-shadow: 0 0 20px 20px #0074a9;
+
+}
