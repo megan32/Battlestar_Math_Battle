@@ -35,6 +35,8 @@ document.getElementById("launch").onclick=
     countDown();
 
     generateQandA();
+    
+
  }
 
   }
@@ -59,12 +61,13 @@ for(i=1; i<5; i++){
             }, 1000);
 
             //Generate new Q&A
-
             generateQandA();
+            bgQuote();
         }else{
         //Wrong answer
             hide("correct");
             show("wrong");
+            cylonQuote();
             setTimeout(function(){
                 hide("wrong");
             }, 1000);
@@ -132,3 +135,63 @@ action =  setInterval(function(){
 function stopCountdown(){
   clearInterval(action);
 }
+
+var bgArr = [
+"Commander Adama: It smells like a trap. It feels like a trap. I believe it is a trap.",  
+"Commander Adama: You have the tongue of an angel and the soul of a serpent.", 
+"Captain Kara 'Starbuck' Thrace: Nothing but the rain.", 
+"Admiral William Adama: Grab your gun and bring in the cat.",
+"Captain Lee 'Apollo' Adama: Never could read your handwriting.",
+"Captain Lee 'Apollo' Adama: Steady as she goes. Take us right into the center. ",
+"Colonel Tigh: Quite simply, an overdose of pleasure.", 
+"Col. Tigh: The void? Adama, there are probably as many voids in the universe as there are ideas.", 
+"Adama: “Sometimes, you have to roll a hard six.",
+"Starbuck: Frak me."
+];
+
+var cyArr = [
+'Baltar: It was a mistake! I meant no harm. Adama, the Lords are with you. Use your power. Get us out of here!',
+
+'Number Six: The one human flaw that you spend your lifetimes distressing over… Mortality is the one thing… Well, it’s the one thing that makes you whole.',
+
+'Gaius Baltar: It’s all so pointless. We kill them, and they kill us, so we kill more of them, so they kill more of us. What’s the point anymore?',
+
+'Number Six: Oh, come on, it is spectacular.',
+
+'Number Six: It didn\'t frakkin\' happen.',
+
+'Number Five: I can\'t understand how he was discovered. I heard it was Dr. Baltar.',
+
+'Virtual Baltar: But the question remains, does all of this have to happen again?',
+
+'Cavil: Frak!',
+
+'Number Eight: Too much confusion.',
+
+'Number One: In all your travels, have you ever seen a star go supernova?',
+
+'Ellen Tigh: The five of us designed you to be as human as possible.'
+];
+
+
+
+
+//quote Generator BG side
+function bgQuote(){
+  var randomNum = Math.floor(Math.random()*(bgArr.length));
+  document.getElementById("quoteLocale").innerHTML = bgArr[randomNum];
+}
+//quote Generator Cylon side
+function cylonQuote(){
+  var randomNum = Math.floor(Math.random()*(cyArr.length));
+  document.getElementById("quoteLocale").innerHTML = cyArr[randomNum]
+}
+
+/*function quoteBattle(score){
+  if(score % 2 === 0){
+    docuemnt.getElementById("quoteLocale").innerHTML = bgArr();
+  } else if (score % 2 !== 0){
+   docuemnt.getElementById("quoteLocale").innerHTML = cylonQuote();
+  }
+}
+*/
