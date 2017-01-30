@@ -15,7 +15,7 @@ document.getElementById("launch").onclick=
     if(playing == true){
       location.reload;
     } else {
-     playing = true; //re-assign to true, so that you ARE playing
+     playing = true; //re-assign to true
       document.getElementById("launch").style.boxShadow ="none";
       hide("startGame");
     //reset score
@@ -25,7 +25,7 @@ document.getElementById("launch").onclick=
 
     //set timer
     show("timer");
-    timer = 10;
+    timer = 60;
     document.getElementById("timeRemaining").innerHTML = timer;
 
     hide("gameOver");

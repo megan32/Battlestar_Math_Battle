@@ -152,6 +152,7 @@ left: 95px;
 text-align: center;
 font-size: 15px;
 border-radius: 5px;
+cursor: pointer;
 position: absolute;
 }
 
