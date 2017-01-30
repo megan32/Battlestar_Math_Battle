@@ -38,6 +38,7 @@ font-family: 'Audiowide', cursive;
   text-align: center;
   font-size: 15px;
   border-radius: 5px;
+  position: absolute;
   display:none;
 }
 #wrong{
@@ -50,6 +51,7 @@ font-family: 'Audiowide', cursive;
   text-align: center;
   font-size: 15px;
   border-radius: 5px;
+  position: absolute;
   display:none;
 }
 
@@ -68,14 +70,14 @@ font-family: 'Audiowide', cursive;
 }
 #equation{
   width: 400px;
-  height:130px;
-  padding-top: 3px;
+  height:120px;
+  padding-top: 13px;
   padding-left: 10px;
   margin-top: 20px;
   left: 40px;
   background: #D2D7D3;
   text-align: center;
-  font-size: 50px;
+  font-size: 80px;
   border-radius: 5px;
   position: absolute;
 }
@@ -157,7 +159,9 @@ position: absolute;
   width: 450px;
   height:230px;
   padding-left: 10px;
+  margin-top: 20px;
   left: 10px;
+  top: 30px;
   background: #D2D7D3;
   text-align: center;
   font-size: 40px;
