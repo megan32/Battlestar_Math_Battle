@@ -25,7 +25,7 @@ document.getElementById("launch").onclick=
 
     //set timer
     show("timer");
-    timer = 5;
+    timer = 35;
     document.getElementById("timeRemaining").innerHTML = timer;
 
     hide("gameOver");
