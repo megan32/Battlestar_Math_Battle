@@ -15,7 +15,7 @@ document.getElementById("launch").onclick=
     if(playing == true){
       location.reload;
     } else {
-     playing == true;
+     playing = true;
       document.getElementById("launch").style.boxShadow ="none";
       hide("startGame");
     //reset score
